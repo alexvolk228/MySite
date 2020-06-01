@@ -1,0 +1,290 @@
+body {
+margin: 0;
+padding: 0;
+
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+line-height: 24px;
+color: #191a19;
+
+background-color: snow;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #eeeeee;  
+}
+
+.main-logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.main-logo h1 {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+
+.main-logo li{
+    list-style: none;
+}
+
+.main-nav {
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.site-nav a,
+.user-nav a {
+    display: block;
+    padding: 20px 30px;
+}
+
+.site-nav, 
+.user-nav {
+    list-style: none;
+}
+
+.site-nav a, 
+.user-nav a,
+.main-nav h1{
+    color: #191a19;
+}
+
+.user-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.site-nav a:hover, 
+.site-nav a:focus, 
+.user-nav a:hover,
+.user-nav a:focus, 
+.main-nav h1:hover,
+.main-nav h1:focus {
+    color: rgb(255, 0, 0);
+}
+
+.contain {
+    display: flex;
+    justify-content: space-between;
+}
+.main-tagline {
+    display: flex;
+    justify-content: center;
+}
+
+.tag-block h2 {
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.main-tagline img{
+    margin-left: 200px;
+}
+
+.service {
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.service div h2 {
+    font-size: 25px;
+}
+
+.tech {
+    text-align: center;
+    background-color: #d1cbd9;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.serv {
+    text-align: center;
+    background-color: #b0ddc6;
+    width: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.help {
+    text-align: center;
+    background-color: #fde88d;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.main-footer li {
+    list-style: none;
+}
+
+.card {
+    background-color: #eeeeee;
+
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.div-sect{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.main-iphone h2, .main-ipad h2, .main-mac h2 {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn-buy {
+    padding: 5px;
+    background-color: #d1cbd9;
+    box-shadow: 0 0 10px;
+    border: none;
+}
+
+.btn-buy:hover,
+.btn-buy:focus {
+    background-color: #b0ddc6;
+}
+
+.description {
+    text-align: center;
+}
+.description ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.description h2 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.main-map {
+    position: relative;
+    z-index: 0;
+}
+
+.contacts-map {
+    position: absolute;
+    height: 180px;
+    width: 300px;
+    top: 50%;
+    left: 100px;
+    margin-top: -90px;
+    padding-left: 10px;
+    z-index: 1;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.main-map img {
+    width: 100%;
+}
+
+.main-footer li {
+    float: left;
+    margin: 10px;
+}
+
+.sale {
+    float: right;
+    margin-top: -15px;
+    margin-right: 50px;
+}
+
+.modal-login {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    background-color: white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+    display: none;
+}
+.modal-login-show {
+    display: block;
+}
+
+.modal-close {
+border: none;
+width: 22px;
+height: 22px;
+background-color: transparent;
+position: absolute;
+top: 0;
+right: -34px;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    background-color: black;
+}
+.modal-close::before {
+    transform: rotate(45deg);
+}
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+.form-box{
+    position: relative;
+    top: 100px;
+    left: 50%;
+    height: 200px;
+    width: 300px;
+    margin-left: -150px;
+   
+    background-color: #eeeeee;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 60px;
+
+}
+
+.form-box input {
+    border: none;
+    font-family: inherit;
+    padding: 10px;
+}
+
+.form-box button {
+    border: none;
+    background-color: #d1cbd9;
+    box-shadow: 0 0 10px;
+}
+
+.form-box button:hover,
+.form-box button:focus{
+    background-color: #b0ddc6;
+}
